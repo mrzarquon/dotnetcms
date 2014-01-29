@@ -20,7 +20,6 @@ class dotnetcms::7zip {
   #  include profile::staging
   
   staging::file {'C:\staging\7z920-x64.msi':
-    ensure => present,
     source => 'http://master/7zip/7z920-x64.msi',
   }
 

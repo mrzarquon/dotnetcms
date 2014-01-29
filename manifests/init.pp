@@ -9,7 +9,6 @@ class dotnetcms {
   }
 
   staging::file {'C:\staging\dotNetFx40_Full_x86_x64.exe':
-    ensure => present,
     source => 'http://master/dotnetcms/dotNetFx40_Full_x86_x64.exe',
     before => Package['Microsoft .NET Framework 4 Client Profile'],
   }
@@ -32,7 +31,6 @@ class dotnetcms {
   }
  
   staging::file { 'C:\staging\CMS4.06.zip':
-    ensure => present,
     source => 'http://master/dotnetcms/CMS4.06.zip',
   }
 
