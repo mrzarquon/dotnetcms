@@ -27,7 +27,7 @@ class dotnetcms::7zip {
     ensure  => installed,
     name    => '7-Zip 9.20 (x64 edition)',
     source  => 'C:\staging\7z920-x64.msi',
-    require => Stagin::File['C:\staging\7z920-x64.msi'],
+    require => Staging::File['C:\staging\7z920-x64.msi'],
   }
 
 }
