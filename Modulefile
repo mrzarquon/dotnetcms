@@ -1,5 +1,5 @@
 name    'seteam-dotnetcms'
-version '0.1.0'
+version '0.2.0'
 source 'https://github.com/sseebald/dotnetcms.git'
 author 'seteam'
 license 'Apache License, Version 2.0'

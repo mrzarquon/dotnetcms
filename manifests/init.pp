@@ -12,6 +12,13 @@ class dotnetcms {
     source => 'http://master/dotnetcms/dotNetFx40_Full_x86_x64.exe',
     before => Package['Microsoft .NET Framework 4 Client Profile'],
   }
+  
+  file { 'C:\staging\dotNetFx40_Full_x86_x64.exe':
+    ensure  => file,
+    mode    => 0755,
+    require => Staging::File['C:\staging\dotNetFx40_Full_x86_x64.exe'],
+    before  => Package['Microsoft .NET Framework 4 Client Profile'],
+  }
 
   package { 'Microsoft .NET Framework 4 Client Profile':
     ensure          => installed,
