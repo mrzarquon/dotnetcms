@@ -39,7 +39,6 @@ class dotnetcms {
  
   staging::file { 'CMS4.06.zip':
     source => 'http://master/dotnetcms/CMS4.06.zip',
-    target => 'C:\staging\dotnetcms\CMS4.06.zip',
   }
 
   exec { 'extract_cms4':
