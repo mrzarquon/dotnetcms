@@ -10,6 +10,7 @@ class dotnetcms {
 
   staging::file {'C:\staging\dotNetFx40_Full_x86_x64.exe':
     source => 'http://master/dotnetcms/dotNetFx40_Full_x86_x64.exe',
+    target => 'C:\staging\dotNetFx40_Full_x86_x64.exe',
     before => Package['Microsoft .NET Framework 4 Client Profile'],
   }
   
@@ -39,6 +40,7 @@ class dotnetcms {
  
   staging::file { 'C:\staging\CMS4.06.zip':
     source => 'http://master/dotnetcms/CMS4.06.zip',
+    target => 'C:\staging\CMS4.06.zip',
   }
 
   exec { 'extract_cms4':

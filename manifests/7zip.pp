@@ -21,6 +21,7 @@ class dotnetcms::7zip {
   
   staging::file {'C:\staging\7z920-x64.msi':
     source => 'http://master/7zip/7z920-x64.msi',
+    target => 'C:\staging\7z920-x64.msi',
   }
 
   package { '7-Zip':
